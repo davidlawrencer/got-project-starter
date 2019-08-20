@@ -27,5 +27,10 @@ import Foundation
  - let's create a tableview in a view controller
  - create two prototype cells
  - populate the tableview with data (naive solution without filtering)
- 
+ - filter that data - search through a matrix
+        -- mine: in vc - created vars for each filtered season
+            -- prob would've done in model, didn't put in an array for the entire series
+        -- static function in model that returns each individual season when you ask for them
+            -- in VC, would check the episode.season value against the section + 1 value
+        -- static var array of arrays [[GOTEpisode]] in model
  */

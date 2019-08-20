@@ -10,7 +10,7 @@ import UIKit
 
 class EpisodeListViewController: UIViewController {
 
-    var gotEpisode = GOTEpisode.allEpisodes
+    var gotSeries = Series()
     @IBOutlet weak var episodeTableView: UITableView!
     
     override func viewDidLoad() {
@@ -24,18 +24,22 @@ class EpisodeListViewController: UIViewController {
 extension EpisodeListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 7
+        return gotSeries.seasons.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Season \(section + 1)"
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return gotEpisode.count
+        return gotSeries.seasons[section].episodes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //leftSideImageCell only
         if let cell = episodeTableView.dequeueReusableCell(withIdentifier: "leftSideImageCell") as? EpisodeTableViewCell {
-            cell.episodeNameLabel.text = gotEpisode[indexPath.row].name
-            cell.episodeAndSeasonNumberLabel.text = gotEpisode[indexPath.row].getFormattedEpAndSeasonString()
+            cell.episodeNameLabel.text = gotSeries.seasons[indexPath.section].episodes[indexPath.row].name
+            cell.episodeAndSeasonNumberLabel.text = gotSeries.seasons[indexPath.section].episodes[indexPath.row].getFormattedEpAndSeasonString()
             return cell
         }
         return UITableViewCell()

@@ -26,5 +26,6 @@ import Foundation
  How: to do this
  - let's create a tableview in a view controller
  - create two prototype cells
+ - populate the tableview with data (naive solution without filtering)
  
  */

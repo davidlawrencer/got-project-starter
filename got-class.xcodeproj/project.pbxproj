@@ -16,6 +16,7 @@
 		54D7ABC6230C4132000DE98D /* got_classUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D7ABC5230C4132000DE98D /* got_classUITests.swift */; };
 		54D7ABD4230C416E000DE98D /* ClassNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D7ABD3230C416E000DE98D /* ClassNotes.swift */; };
 		54D7ABD8230C4540000DE98D /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D7ABD7230C4540000DE98D /* Episode.swift */; };
+		54D7ABDA230C4A4F000DE98D /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D7ABD9230C4A4F000DE98D /* EpisodeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		54D7ABC7230C4132000DE98D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54D7ABD3230C416E000DE98D /* ClassNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassNotes.swift; sourceTree = "<group>"; };
 		54D7ABD7230C4540000DE98D /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		54D7ABD9230C4A4F000DE98D /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				54D7ABA5230C412E000DE98D /* AppDelegate.swift */,
 				54D7ABA7230C412E000DE98D /* ViewController.swift */,
 				54D7ABA9230C412E000DE98D /* Main.storyboard */,
+				54D7ABD9230C4A4F000DE98D /* EpisodeTableViewCell.swift */,
 				54D7ABAC230C4131000DE98D /* Assets.xcassets */,
 				54D7ABAE230C4131000DE98D /* LaunchScreen.storyboard */,
 				54D7ABB1230C4131000DE98D /* Info.plist */,
@@ -265,6 +268,7 @@
 				54D7ABD4230C416E000DE98D /* ClassNotes.swift in Sources */,
 				54D7ABD8230C4540000DE98D /* Episode.swift in Sources */,
 				54D7ABA8230C412E000DE98D /* ViewController.swift in Sources */,
+				54D7ABDA230C4A4F000DE98D /* EpisodeTableViewCell.swift in Sources */,
 				54D7ABA6230C412E000DE98D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

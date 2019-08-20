@@ -25,5 +25,6 @@ import Foundation
 
  How: to do this
  - let's create a tableview in a view controller
+ - create two prototype cells
  
  */

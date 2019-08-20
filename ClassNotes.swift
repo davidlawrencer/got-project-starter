@@ -24,6 +24,6 @@ import Foundation
  - how to use Property Observers (ex: willSet or didSet)
 
  How: to do this
- 
+ - let's create a tableview in a view controller
  
  */
